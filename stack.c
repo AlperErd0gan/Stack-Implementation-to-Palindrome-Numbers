@@ -70,8 +70,3 @@ void Permutations_of_given_string(char *str, int start, int end)
         }
     }
 };
-void charPermu(char *cht)
-{   //find the length of a function with the help of the strlen function 
-    int length = strlen(cht);
-    Permutations_of_given_string(cht, 0, length - 1);
-};

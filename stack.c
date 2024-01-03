@@ -53,20 +53,4 @@ return lenght;
 }
 }
 
-void Permutations_of_given_string(char *str, int start, int end)
-{   //We will use two pointers that will show the start and the end of the string
-    if (start == end)
-    {  
-        printf("%s\n", str);
-    }
-    //We will change the start and the end if the index of the sart character is smaller than the end. The start pointer of the start helps us itterate over the string
-    else
-    {
-        for (int i = start; i <= end; i++)
-        {
-            swap(&str[start], &str[i]);
-            Permutations_of_given_string(str, start + 1, end);
-            swap(&str[start], &str[i]); // Geri dön
-        }
-    }
-};
+
